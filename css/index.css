@@ -236,6 +236,9 @@ section#features-section .statistic .label {
 section.conversion-section {
   text-align: center; }
 
+.sharethis-inline-share-buttons {
+  margin-top: 30px; }
+
 /**
  *
  *  Footer
