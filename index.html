@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="A real-time scoring app for climbing events. Ditch that Excel sheet. Get split-second rankings and instantly deliver scores to your spectators.">
+  <meta name="keywords" content="climbing, bouldering, sport-climbing, competition, IFSC, real-time scoring, boulderactive">
+  <meta name="author" content="CRIMP Development Team">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+
+
+  <meta property="og:title" content="CRIMP: Comprehensive Real-time Index of MgCO&#8323; Performance" />
+  <meta property="og:site_name" content="CRIMP"/>
+  <meta property="og:url" content="http://crimp.rocks" />
+  <meta property="og:description" content="A real-time scoring app for climbing events. Ditch that Excel sheet. Get split-second rankings and instantly deliver scores to your spectators.">
+  <meta property="fb:app_id" content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="" />
+
+
+
+  <title>CRIMP - a real-time scoring app for climbing events</title>
+  <!-- <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/png"> -->
+
+
+  <!-- Libraries -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" integrity="sha256-t2/7smZfgrST4FS1DT0bs/KotCM74XlcqZN5Vu7xlrw=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.css" integrity="sha256-wT6CFc7EKRuf7uyVfi+MQNHUzojuHN2pSw0YWFt2K5E=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Alegreya+Sans|Oswald|Open+Sans">
+
+  <!-- Our custom styles -->
+  <link rel="stylesheet" href="css/index.css">
+  <script async defer src="//platform-api.sharethis.com/js/sharethis.js#property=58a4249d8d1151001277c1c9&product=inline-share-buttons"></script>
+
+</head>
+
+<body>
+  <div class="ui top sidebar vertical menu">
+    <a class="item" href="#features">
+      Features
+    </a>
+    <a class="item" href="#howitworks">
+      How it works
+    </a>
+    <a class="item" href="#pricing">
+      Pricing
+    </a>
+    <a class="item" href="">
+      About Us
+    </a>
+    <div class="item">
+      <div class="ui yellow fluid button">
+        <i class="ui sign in icon"></i>
+        Login/Sign Up
+      </div>
+    </div>
+  </div>
+
+
+  <div class="pusher">
+    <header>
+      <nav class="ui menu">
+        <div class="item">
+          <a class="crimp" href="/#">CRIMP</span>
+        </div>
+
+        <div class="mobile <!--tablet--> hidden right menu">
+          <a class="item" href="#features">
+            Features
+          </a>
+          <a class="item" href="#howitworks">
+            How it works
+          </a>
+          <a class="item" href="#pricing">
+            Pricing
+          </a>
+          <a class="item" href="">
+            About Us
+          </a>
+          <div class="item">
+            <div class="ui labeled icon yellow button">
+              <i class="ui sign in icon"></i> Login/Sign Up
+            </div>
+          </div>
+        </div>
+
+        <div class="tablet computer large widescreen monitor hidden right menu">
+          <a id="open-ui-sidebar" class="item">
+            <i class="ui content icon"></i>
+          </a>
+        </div>
+      </nav>
+
+
+      <div class="ui container header-text">
+        <h1>It's time to ditch Excel</h1>
+
+        <h2>
+          <span class="sentence">We reinvent scoring to supercharge the spectating experience at your climbing event</span>
+          <span class="sentence">Deliver real-time scores to your climbers while simplifying scorekeeping for your crew</span>
+        </h2>
+      </div>
+    </header>
+
+
+
+    <div id="features" class="anchor"></div>
+    <section id="features-section" class="ui container">
+      <h1 class="ui centered header crimp">Scorekeeping for the 21st century climbing event</h1>
+      <!-- <h2 class="ui centered sub header">Scorekeeping should not be stuck in the 90s.</h2> -->
+
+
+      <div class="ui centered statistics grid">
+
+        <div class="four wide computer five wide tablet fourteen wide mobile column">
+          <div class="statistic">
+            <div class="value">
+              <i class="trophy yellow icon"></i>
+            </div>
+            <div class="label">
+              <p class="title">Live scores on <a href="http://demo.crimp.rocks" target="_blank"><i>your-event-name</i>.crimp.rocks</p></a>
+
+              <p class="description">Let your climbers track their progress as the event happens! Waiting 3 hours for score tabulation to be done manually.</p>
+
+              <p class="disclaimer">* This feature can be turned off</i>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="four wide computer five wide tablet fourteen wide mobile column">
+          <div class="statistic">
+            <div class="value">
+              <i class="android yellow icon"></i>
+            </div>
+            <div class="label">
+              <p class="title">Easy-to-use app for route judges</p>
+
+              <p class="description">Scores are delivered to our servers and pushed to the phones of climbers and spectators instantly.</p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="four wide computer five wide tablet fourteen wide mobile column">
+          <div class="statistic">
+            <div class="value">
+              <i class="child yellow icon"></i>
+            </div>
+            <div class="label">
+              <p class="title">Show who's climbing on the wall</p>
+
+              <p class="description">Event management and monitoring dashboard for Chief Judge to oversee scorekeeping</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="four wide computer five wide tablet fourteen wide mobile column">
+          <div class="statistic">
+            <div class="value">
+              <i class="calculator yellow icon"></i>
+            </div>
+            <div class="label">
+              <p class="title">Multiple scoring systems are supported</p>
+
+              <p class="description">IFSC Top-Bonus? Yep. Points? Yep. If you plan to use a score system that we have not added, contact us 1 month in advance and we'll put it in!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="four wide computer five wide tablet fourteen wide mobile column">
+          <div class="statistic">
+            <div class="value">
+              <i class="newspaper yellow icon"></i>
+            </div>
+            <div class="label">
+              <p class="title">Automatically generated individualized score-chits for your climbers</p>
+
+              <p class="description">Designed for use with scoring app to speed up scoring. Collect them back after the climbs and they'll work as a hard-copy backup!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="four wide computer five wide tablet fourteen wide mobile column">
+          <div class="statistic">
+            <div class="value">
+              <i class="record yellow icon"></i>
+            </div>
+            <div class="label">
+              <p class="title">Live-data for live-broadcast</p>
+
+              <p class="description">Our server knows all about the climbers currently on the wall. Text-overlay on video streams can be so much richer.</p>
+            </div>
+          </div>
+        </div>
+
+        <!--
+        <div class="four wide computer five wide tablet fourteen wide mobile column">
+          <div class="statistic">
+            <div class="value">
+              <i class="record yellow icon"></i>
+            </div>
+            <div class="label">
+              <p class="title"></p>
+
+              <p class="description"></p>
+            </div>
+          </div>
+        </div>
+        -->
+
+      </div>
+
+
+    </section>
+
+
+
+    <section class="ui container conversion-section">
+      <h1 class="ui centered header crimp">Tell someone about us!</h1>
+
+      <p>We are new and we could really use your help to reach out to people who'll find us useful.</p>
+      <p>If you know folks that organizes climbing events at any level, please tell them about us!</p>
+
+      <div class="sharethis-inline-share-buttons"></div>
+    </section>
+
+
+
+    <div id="howitworks" class="anchor"></div>
+    <section id="howitworks-section" class="ui container">
+      <h1 class="ui centered header crimp">How this works</h1>
+    </section>
+
+
+
+    <section class="ui container conversion-section">
+      <h1 class="ui centered header crimp">Try it out for free!</h1>
+
+      <p>Play around with our demo event!</p>
+      <div class="ui centered grid">
+        <div class="three wide monitor five wide computer five wide tablet fourteen wide mobile column">
+          <button class="ui yellow fluid button">Take me to the app!</button>
+        </div>
+      </div>
+    </section>
+
+
+
+    <div id="pricing" class="anchor"></div>
+    <section class="ui container">
+      <h1 class="ui centered header crimp">Pricing Guide</h1>
+
+    </section>
+
+
+
+    <footer>
+      <section class="ui two column stackable grid container">
+        <div class="column">
+          <p class="ui large header crimp">CRIMP</p>
+          <p>
+            Comprehensive Real-time Index of MgCO₃ Performance
+          </p>
+          <p>
+            First ascent in 2014<br>
+            Cleaned and bolted in &nbsp;<abbr title="Singapore"><i class="ui sg flag"></i></abbr><br>
+            Graded as YDS 5.9 / French 5c<br>
+            Definitely not sandbagged
+          </p>
+        </div>
+
+        <!-- <div class="column">
+          <p class="ui large header crimp">Jobs</p>
+          <p>
+            We're looking for:
+
+            <ul>
+              <li><b>iOS Developer</b></li>
+            </ul>
+
+            Drop us an email if you're interested!
+          </p>
+        </div> -->
+
+        <div class="column">
+          <p class="ui large header crimp">Contact</p>
+          <p>
+            <a href="mailto:hello@crimp.rocks">
+              <i class="ui mail outline icon"></i> hello@crimp.rocks
+            </a><br>
+            <!-- <a href="https://www.facebook.com/CRIMP.rocks/" target="_blank">
+              <i class="ui facebook icon"></i> Facebook
+            </a><br>
+            <a href="https://www.instagram.com/CRIMP.rocks/" target="_blank">
+              <i class="ui instagram icon"></i> Instagram
+            </a><br> -->
+
+          </p>
+        </div>
+      </section>
+    </footer>
+  </div>
+
+
+  <!-- Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.js" integrity="sha256-flVaeawsBV96vCHiLmXn03IRJym7+ZfcLVvUWONCas8=" crossorigin="anonymous"></script>
+
+  <script async src="js/index.js"></script>
+
+
+  <!-- For FB Share button -->
+  <div id="fb-root"></div>
+</body>

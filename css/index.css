@@ -1,0 +1,247 @@
+@font-face {
+  font-family: 'League Spartan';
+  src: url("leaguespartan-bold.eot");
+  src: url("leaguespartan-bold.eot?#iefix") format("embedded-opentype"), url("leaguespartan-bold.woff2") format("woff2"), url("leaguespartan-bold.woff") format("woff"), url("leaguespartan-bold.ttf") format("truetype"), url("leaguespartan-bold.svg#league_spartanbold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+/**
+ *
+ *  Media Queries
+ *
+ */
+@media only screen and (max-width: 767px) {
+  .mobile.hidden,
+  .tablet.only,
+  .computer.only,
+  .large.monitor.only,
+  .widescreen.monitor.only {
+    display: none !important; } }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .mobile.only,
+  .tablet.hidden,
+  .computer.only,
+  .large.monitor.only,
+  .widescreen.monitor.only {
+    display: none !important; } }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .mobile.only,
+  .tablet.only,
+  .computer.hidden,
+  .large.monitor.only,
+  .widescreen.monitor.only {
+    display: none !important; } }
+@media only screen and (min-width: 1200px) and (max-width: 1919px) {
+  .mobile.only,
+  .tablet.only,
+  .computer.only,
+  .large.monitor.hidden,
+  .widescreen.monitor.only {
+    display: none !important; } }
+@media only screen and (min-width: 1920px) {
+  .mobile.only,
+  .tablet.only,
+  .computer.only,
+  .large.monitor.only,
+  .widescreen.monitor.hidden {
+    display: none !important; } }
+/**
+ *
+ *  Utility
+ *
+ */
+.crimp {
+  font-family: "League Spartan", sans-serif !important; }
+
+/**
+ *
+ *  General Classes
+ *
+ */
+a {
+  color: #FBBD08; }
+  a:hover, a:focus {
+    color: #FF7849; }
+
+nav {
+  z-index: 1000; }
+
+section.ui.container {
+  position: relative;
+  padding: 50px 0;
+  border-bottom: 1px solid rgba(34, 36, 38, 0.1); }
+  section.ui.container:last-child {
+    border: none; }
+
+div.anchor {
+  position: relative;
+  top: -40px; }
+
+/**
+ *
+ *  Header
+ *
+ */
+header {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: calc(100vh - 40px);
+  min-height: 500px;
+  overflow: hidden;
+  margin-top: 40px;
+  color: #FFF;
+  text-align: center;
+  background: url("../assets/3_lg.jpg") no-repeat center center;
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover; }
+  header .crimp {
+    position: absolute;
+    top: 7px;
+    font-size: 2em;
+    color: #000; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      header .crimp {
+        top: 11px; } }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      header .crimp {
+        top: 11px; } }
+    @media (min-width: 1200px) and (max-width: 1919px) {
+      header .crimp {
+        top: 11px; } }
+    @media (min-width: 1920px) {
+      header .crimp {
+        top: 11px; } }
+  header .ui.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 0;
+    border: none;
+    text-align: center; }
+    header .ui.menu .item:before {
+      background: none; }
+  header .header-text {
+    position: relative;
+    top: 50%;
+    width: 100%;
+    height: 200px;
+    margin-top: -100px;
+    text-align: center;
+    text-shadow: 0px 0px 6px #1A2634; }
+  header h1 {
+    display: block;
+    max-width: 300px;
+    padding: 0;
+    margin: 0 auto;
+    font-family: "League Spartan", sans-serif;
+    font-size: 2.7rem;
+    line-height: 3.5rem;
+    text-shadow: 6px 6px 10px #1A2634;
+    color: #FFF; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      header h1 {
+        max-width: 600px;
+        font-size: 3rem; } }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      header h1 {
+        max-width: 600px;
+        font-size: 3rem; } }
+    @media (min-width: 1200px) and (max-width: 1919px) {
+      header h1 {
+        max-width: 600px;
+        font-size: 3rem; } }
+    @media (min-width: 1920px) {
+      header h1 {
+        max-width: 600px;
+        font-size: 3rem; } }
+  header h2 {
+    display: block;
+    max-width: 320px;
+    font-family: 'Alegreya Sans';
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 20px auto;
+    color: #FFF; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      header h2 {
+        max-width: 600px;
+        font-size: 1.3rem; } }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      header h2 {
+        max-width: 768px;
+        font-size: 1.4rem; } }
+    @media (min-width: 1200px) and (max-width: 1919px) {
+      header h2 {
+        max-width: 768px;
+        font-size: 1.4rem; } }
+    @media (min-width: 1920px) {
+      header h2 {
+        max-width: 768px;
+        font-size: 1.4rem; } }
+    header h2 .sentence {
+      display: inline-block;
+      margin: 6px auto; }
+      @media (min-width: 768px) and (max-width: 991px) {
+        header h2 .sentence {
+          margin: 2px auto; } }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        header h2 .sentence {
+          margin: 2px auto; } }
+      @media (min-width: 1200px) and (max-width: 1919px) {
+        header h2 .sentence {
+          margin: 2px auto; } }
+      @media (min-width: 1920px) {
+        header h2 .sentence {
+          margin: 2px auto; } }
+
+.social-buttons {
+  position: relative;
+  display: block;
+  width: 100%; }
+  .social-buttons > * {
+    display: inline-block;
+    margin: 0 3px; }
+  .social-buttons iframe {
+    border: 1px solid #000; }
+  .social-buttons .header-social-buttons {
+    display: block; }
+  .social-buttons .github-button {
+    font-size: 0; }
+
+/**
+ *
+ *  Sections
+ *
+ */
+section#features-section .statistic .value .icon {
+  font-size: 1.6em; }
+  section#features-section .statistic .value .icon::before {
+    vertical-align: text-bottom; }
+section#features-section .statistic .label {
+  text-transform: none;
+  font-weight: 400; }
+  section#features-section .statistic .label .title {
+    font-size: 1.1em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700; }
+  section#features-section .statistic .label .description {
+    font-family: "Alegreya Sans", sans-serif; }
+  section#features-section .statistic .label .disclaimer {
+    color: #bbb;
+    font-size: 0.8em; }
+
+section.conversion-section {
+  text-align: center; }
+
+/**
+ *
+ *  Footer
+ *
+ */
+footer .ui.flag {
+  margin: 0 2px; }
+
+/*# sourceMappingURL=index.css.map */
