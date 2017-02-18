@@ -227,9 +227,11 @@ section#features-section .statistic .value .icon {
   section#features-section .statistic .value .icon::before {
     vertical-align: text-bottom; }
 section#features-section .statistic .label {
+  margin-top: 10px;
   text-transform: none;
   font-weight: 400; }
   section#features-section .statistic .label .title {
+    color: rgba(0, 0, 0, 0.75) !important;
     font-size: 1.1em;
     font-family: "Open Sans", sans-serif;
     font-weight: 700; }

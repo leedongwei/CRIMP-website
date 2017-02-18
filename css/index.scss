@@ -305,18 +305,20 @@ section#features-section {
   .statistic {
     .value .icon {
       font-size: 1.6em;
-
-
-      &::before {
-        vertical-align: text-bottom;
-      }
+      &::before { vertical-align: text-bottom; }
     }
 
     .label {
+      margin-top: 10px;
       text-transform: none;
       font-weight: 400;
 
-      .title{
+      .ui.accordion {
+
+      }
+
+      .title {
+        color: rgba(0,0,0,.75) !important;
         font-size: 1.1em;
         font-family: $font_body;
         font-weight: 700;

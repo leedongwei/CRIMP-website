@@ -2,6 +2,7 @@ $('#open-ui-sidebar').on('click', () => {
   $('.ui.sidebar').sidebar('toggle');
 });
 
+$('.ui.accordion').accordion();
 
 
 
