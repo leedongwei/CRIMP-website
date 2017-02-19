@@ -1,3 +1,4 @@
+@import url(./timeline.css);
 @font-face {
   font-family: 'League Spartan';
   src: url("leaguespartan-bold.eot");
@@ -90,7 +91,7 @@ header {
   position: relative;
   display: block;
   width: 100%;
-  height: calc(90vh - 40px);
+  height: calc(100vh - 40px);
   min-height: 500px;
   overflow: hidden;
   margin-top: 40px;
@@ -236,7 +237,8 @@ section#features-section .statistic .label {
     font-family: "Open Sans", sans-serif;
     font-weight: 700; }
   section#features-section .statistic .label .description {
-    font-family: "Alegreya Sans", sans-serif; }
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 1.1em; }
   section#features-section .statistic .label .disclaimer {
     color: #bbb;
     font-size: 0.85em; }
@@ -246,6 +248,12 @@ section.conversion-section {
 
 .sharethis-inline-share-buttons {
   margin-top: 30px; }
+
+section#howitworks-section {
+  color: #323232;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 112.5%;
+  line-height: 1.6em; }
 
 /**
  *

@@ -1,10 +1,10 @@
-$('#open-ui-sidebar').on('click', () => {
-  $('.ui.sidebar').sidebar('toggle');
+$(document).ready(function () {
+  $('.ui.accordion').accordion();
+
+  $('#open-ui-sidebar').on('click', function () {
+    $('.ui.sidebar').sidebar('toggle');
+  });
 });
-
-$('.ui.accordion').accordion();
-
-
 
 
 if (window.location.hostname == 'crimp.rocks') {
