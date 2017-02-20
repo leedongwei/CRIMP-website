@@ -56,14 +56,14 @@
   float: right;
 }
 
-.flag-wrapper {
+.timepoint-wrapper {
   position: relative;
   display: inline-block;
 
   text-align: center;
 }
 
-.flag {
+.timepoint {
   position: relative;
   display: inline;
   background: rgb(248,248,248);
@@ -74,20 +74,20 @@
   text-align: left;
 }
 
-.direction-l .flag {
+.direction-l .timepoint {
   -webkit-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
   -moz-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
   box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
 }
 
-.direction-r .flag {
+.direction-r .timepoint {
   -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
   -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
   box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
 }
 
-.direction-l .flag:before,
-.direction-r .flag:before {
+.direction-l .timepoint:before,
+.direction-r .timepoint:before {
   position: absolute;
   top: 50%;
   right: -10px;
@@ -102,7 +102,7 @@
   z-index: 10;
 }
 
-.direction-r .flag:before {
+.direction-r .timepoint:before {
   left: -10px;
 }
 
@@ -165,25 +165,25 @@
     text-align: center;
   }
 
-  .flag-wrapper {
+  .timepoint-wrapper {
     text-align: center;
   }
 
-  .flag {
+  .timepoint {
     background: rgb(255,255,255);
     z-index: 15;
   }
 
-  .direction-l .flag:before,
-  .direction-r .flag:before {
+  .direction-l .timepoint:before,
+  .direction-r .timepoint:before {
     position: absolute;
     top: -20px;
     left: 50%;
     margin-left: -10px;
   }
 
-  .direction-l .flag:after,
-  .direction-r .flag:after {
+  .direction-l .timepoint:after,
+  .direction-r .timepoint:after {
     content: "";
     position: absolute;
     top: -16px;
