@@ -7,6 +7,7 @@ $(document).ready(function () {
 });
 
 
+
 if (window.location.hostname == 'crimp.rocks') {
   // Google Analytics
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -15,6 +16,11 @@ if (window.location.hostname == 'crimp.rocks') {
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
   ga('create', 'UA-91870246-1', 'auto');
   ga('send', 'pageview');
+
+
+  // Heap Analytics
+  window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+  heap.load("1757994088");
 
 
   // Drift
