@@ -2,6 +2,29 @@ $('#open-ui-sidebar').on('click', () => {
   $('.ui.sidebar').sidebar('toggle');
 });
 
+$('#pricing-slider').on('input', function(e) {
+  const climberCount = e.currentTarget.value;
+
+  $('#pricing-climbers').html(climberCount);
+
+  if (climberCount <= 40) {
+    $('#pricing-plan').html('FREE');
+    $('#pricing-price').html('0');
+  } else if (climberCount <= 180) {
+    $('#pricing-plan').html('AMATEUR');
+
+    const price = (climberCount - 50) * .3 + 20;
+    $('#pricing-price').html(price);
+  } else if (climberCount <= 200) {
+    $('#pricing-plan').html('PRO');
+    $('#pricing-price').html('60');
+  } else {
+    $('#pricing-plan').html('PRO');
+
+    const price = (climberCount - 200) * .3 + 20;
+    $('#pricing-price').html(price);
+  }
+});
 
 // Facebook share button on header
 (function(d, s, id) {

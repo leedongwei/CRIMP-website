@@ -236,6 +236,28 @@ section#features-section .statistic .label {
 section.conversion-section {
   text-align: center; }
 
+#pricing-calculator {
+  margin-top: 50px;
+  text-align: center; }
+  #pricing-calculator .ui.statistic {
+    text-align: center; }
+
+input[type="range"] {
+  width: 100%;
+  padding: 3px 5px;
+  -webkit-appearance: none;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 50rem;
+  border-color: rgba(0, 0, 0, 0.1); }
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #FBBD08;
+  border-radius: 50rem;
+  height: 1em;
+  width: 1em; }
+
 /**
  *
  *  Footer

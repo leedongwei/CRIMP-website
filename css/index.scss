@@ -21,7 +21,7 @@ $font_head_main: 'League Spartan', sans-serif;
 $font_head_sub: 'Alegreya Sans', sans-serif;
 $font_body: 'Open Sans', sans-serif;
 
-
+$yellow: #FBBD08;
 
 
 /**
@@ -94,7 +94,7 @@ $font_body: 'Open Sans', sans-serif;
  *
  */
 a {
-  color: #FBBD08;
+  color: $yellow;
 
   &:hover, &:focus {
     color: #FF7849
@@ -331,6 +331,33 @@ section.conversion-section {
   text-align: center;
 }
 
+
+
+#pricing-calculator {
+  margin-top: 50px;
+  text-align: center;
+
+  .ui.statistic {
+    text-align: center;
+  }
+}
+input[type="range"] {
+    width: 100%;
+    padding: 3px 5px;
+    -webkit-appearance: none;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 50rem;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: $yellow;
+    border-radius: 50rem;
+    height: 1em;
+    width: 1em;
+}
 
 /**
  *
