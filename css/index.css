@@ -229,7 +229,7 @@ section#features-section .statistic .label {
     color: #bbb;
     font-size: 0.85em; }
 
-section#conversion-section {
+section.conversion-section {
   text-align: center; }
 
 .sharethis-inline-share-buttons {
@@ -246,6 +246,20 @@ section#howitworks-section {
   text-align: center; }
   #pricing-calculator .ui.statistic {
     text-align: center; }
+
+#pricing-slider.override-tooltip::before, #pricing-slider.override-tooltip::after {
+  left: 4.5% !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  display: block !important; }
+#pricing-slider.override-tooltip::before {
+  transform: rotate(45deg) scale(1) !important; }
+#pricing-slider.override-tooltip::after {
+  transform: translateX(-50%) scale(1) !important; }
+#pricing-slider.hide-tooltip::before, #pricing-slider.hide-tooltip::after {
+  visibility: hidden !important;
+  opacity: 0 !important;
+  display: none !important; }
 
 input[type="range"] {
   width: 100%;

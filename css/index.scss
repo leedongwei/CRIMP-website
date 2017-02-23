@@ -317,8 +317,8 @@ section#features-section {
 }
 
 
-// Conversion section
-section#conversion-section { text-align: center; }
+// Conversion section (there's more than 1)
+section.conversion-section { text-align: center; }
 .sharethis-inline-share-buttons { margin-top: 30px; }
 
 
@@ -340,6 +340,28 @@ section#howitworks-section {
 
   .ui.statistic {
     text-align: center;
+  }
+}
+
+#pricing-slider {
+  &.override-tooltip {
+    &::before,
+    &::after {
+      left: 4.5% !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+      display: block !important;
+    }
+
+    &::before { transform: rotate(45deg) scale(1)!important }
+    &::after { transform: translateX(-50%) scale(1)!important; }
+  }
+
+  &.hide-tooltip::before,
+  &.hide-tooltip::after {
+    visibility: hidden !important;
+    opacity: 0 !important;
+    display: none !important;
   }
 }
 

@@ -31,6 +31,17 @@ $('#pricing-slider').on('input', function(e) {
 });
 
 
+const hideTooltip = function (e) {
+  $(e.currentTarget)
+    .removeClass('override-tooltip')
+    .addClass('hide-tooltip')
+    .off('input', hideTooltip);
+}
+
+$('#pricing-slider').on('input', hideTooltip);
+
+
+
 if (window.location.hostname == 'crimp.rocks') {
   // Google Analytics
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
