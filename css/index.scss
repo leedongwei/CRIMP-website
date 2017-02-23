@@ -24,6 +24,7 @@ $font_body: 'Open Sans', sans-serif;
 $yellow: #FBBD08;
 
 
+
 /**
  *
  *  Media Queries
@@ -93,6 +94,12 @@ $yellow: #FBBD08;
  *  General Classes
  *
  */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  color: #4A4A4A;
+}
+
 a {
   color: $yellow;
 
@@ -100,6 +107,7 @@ a {
     color: #FF7849
   }
 }
+
 nav { z-index: 1000 }
 section.ui.container {
   position: relative;
@@ -111,9 +119,9 @@ section.ui.container {
   }
 }
 div.anchor {
-    position: relative;
-    top: -40px;
-  }
+  position: relative;
+  top: -40px;
+}
 
 
 
@@ -133,8 +141,7 @@ header {
   margin-top: 40px;
   color: #FFF;
   text-align: center;
-  // background: url('../assets/bg-main-page.jpg') no-repeat center center /*fixed*/;
-  background: url('../assets/3_lg.jpg') no-repeat center center /*fixed*/;
+  background: url('../assets/bg-main-page.jpg') no-repeat center center /*fixed*/;
   background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
@@ -193,11 +200,11 @@ header {
     padding: 0;
     margin: 0 auto;
 
+    color: #FFF;
     font-family: $font_head_main;
     font-size: 2.7rem;
     line-height: 3.5rem;
     text-shadow: 6px 6px 10px #1A2634;
-    color: #FFF;
 
     @media #{$tablet} {
       max-width: 600px;
@@ -220,11 +227,13 @@ header {
   h2 {
     display: block;
     max-width: 320px;
-    font-family: 'Alegreya Sans';
-    font-size: 1.2rem;
     padding: 0;
     margin: 20px auto;
+
     color: #FFF;
+    font-family: 'Alegreya Sans';
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 10px #1A2634;
 
     @media #{$tablet} {
       max-width: 600px;
@@ -263,29 +272,6 @@ header {
   }
 }
 
-.social-buttons {
-  position: relative;
-  display: block;
-  width: 100%;
-
-  > * {
-    display: inline-block;
-    margin: 0 3px;
-  }
-
-  iframe {
-    border: 1px solid #000;
-  }
-
-  .header-social-buttons {
-    display: block;
-  }
-
-  .github-button {
-    font-size: 0;
-  }
-}
-
 
 
 /**
@@ -293,22 +279,25 @@ header {
  *  Sections
  *
  */
+// Features section
 section#features-section {
   .statistic {
     .value .icon {
       font-size: 1.6em;
-
-
-      &::before {
-        vertical-align: text-bottom;
-      }
+      &::before { vertical-align: text-bottom; }
     }
 
     .label {
+      margin-top: 10px;
       text-transform: none;
       font-weight: 400;
 
-      .title{
+      .ui.accordion {
+
+      }
+
+      .title {
+        color: rgba(0,0,0,.75) !important;
         font-size: 1.1em;
         font-family: $font_body;
         font-weight: 700;
@@ -316,23 +305,35 @@ section#features-section {
 
       .description {
         font-family: $font_head_sub;
-
+        font-size: 1.1em;
       }
 
       .disclaimer {
         color: #bbb;
-        font-size: 0.8em;
+        font-size: 0.85em;
       }
     }
   }
 }
 
-section.conversion-section {
-  text-align: center;
+
+// Conversion section
+section#conversion-section { text-align: center; }
+.sharethis-inline-share-buttons { margin-top: 30px; }
+
+
+// Howitworks section
+section#howitworks-section {
+  color: rgb(50,50,50);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 112.5%;
+  line-height: 1.6em;
 }
 
+@import './timeline.css';
 
 
+// Pricing section
 #pricing-calculator {
   margin-top: 50px;
   text-align: center;
@@ -341,6 +342,7 @@ section.conversion-section {
     text-align: center;
   }
 }
+
 input[type="range"] {
     width: 100%;
     padding: 3px 5px;
@@ -358,6 +360,7 @@ input[type="range"]::-webkit-slider-thumb {
     height: 1em;
     width: 1em;
 }
+
 
 /**
  *

@@ -1,3 +1,4 @@
+@import url(./timeline.css);
 @font-face {
   font-family: 'League Spartan';
   src: url("leaguespartan-bold.eot");
@@ -57,6 +58,11 @@
  *  General Classes
  *
  */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  color: #4A4A4A; }
+
 a {
   color: #FBBD08; }
   a:hover, a:focus {
@@ -91,7 +97,7 @@ header {
   margin-top: 40px;
   color: #FFF;
   text-align: center;
-  background: url("../assets/3_lg.jpg") no-repeat center center;
+  background: url("../assets/bg-main-page.jpg") no-repeat center center;
   background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
@@ -136,11 +142,11 @@ header {
     max-width: 300px;
     padding: 0;
     margin: 0 auto;
+    color: #FFF;
     font-family: "League Spartan", sans-serif;
     font-size: 2.7rem;
     line-height: 3.5rem;
-    text-shadow: 6px 6px 10px #1A2634;
-    color: #FFF; }
+    text-shadow: 6px 6px 10px #1A2634; }
     @media (min-width: 768px) and (max-width: 991px) {
       header h1 {
         max-width: 600px;
@@ -160,11 +166,12 @@ header {
   header h2 {
     display: block;
     max-width: 320px;
-    font-family: 'Alegreya Sans';
-    font-size: 1.2rem;
     padding: 0;
     margin: 20px auto;
-    color: #FFF; }
+    color: #FFF;
+    font-family: 'Alegreya Sans';
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 10px #1A2634; }
     @media (min-width: 768px) and (max-width: 991px) {
       header h2 {
         max-width: 600px;
@@ -197,20 +204,6 @@ header {
         header h2 .sentence {
           margin: 2px auto; } }
 
-.social-buttons {
-  position: relative;
-  display: block;
-  width: 100%; }
-  .social-buttons > * {
-    display: inline-block;
-    margin: 0 3px; }
-  .social-buttons iframe {
-    border: 1px solid #000; }
-  .social-buttons .header-social-buttons {
-    display: block; }
-  .social-buttons .github-button {
-    font-size: 0; }
-
 /**
  *
  *  Sections
@@ -221,20 +214,32 @@ section#features-section .statistic .value .icon {
   section#features-section .statistic .value .icon::before {
     vertical-align: text-bottom; }
 section#features-section .statistic .label {
+  margin-top: 10px;
   text-transform: none;
   font-weight: 400; }
   section#features-section .statistic .label .title {
+    color: rgba(0, 0, 0, 0.75) !important;
     font-size: 1.1em;
     font-family: "Open Sans", sans-serif;
     font-weight: 700; }
   section#features-section .statistic .label .description {
-    font-family: "Alegreya Sans", sans-serif; }
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 1.1em; }
   section#features-section .statistic .label .disclaimer {
     color: #bbb;
-    font-size: 0.8em; }
+    font-size: 0.85em; }
 
-section.conversion-section {
+section#conversion-section {
   text-align: center; }
+
+.sharethis-inline-share-buttons {
+  margin-top: 30px; }
+
+section#howitworks-section {
+  color: #323232;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 112.5%;
+  line-height: 1.6em; }
 
 #pricing-calculator {
   margin-top: 50px;
