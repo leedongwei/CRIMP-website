@@ -189,8 +189,8 @@ Body: {
   "climber" : {
     "climber_id": "climberId1",
     "climber_name": "John Smith",
-    "affiliation": "National University of Singapore",
-    "gender": "M",
+    "climber_affiliation": "National University of Singapore",
+    "climber_gender": "M",
     "categories": [
       {
         "category_id": "categoryIdA",
@@ -246,7 +246,7 @@ Body: {
 | --- | --- | --- |
 | `climber.climber_id`                                   | String |  |
 | `climber.climber_name`                                 | String |  |
-| `climber.affiliation`                                  | String |  |
+| `climber.climber_affiliation`                                  | String |  |
 | `climber.gender`                                       | String | Possible values are `M`, `F` or no value |
 | `climber.categories`                                   | Array | Sorted list, sort by `category_id` |
 | `climber.categories.$`                                 | Object |  |
@@ -276,7 +276,7 @@ Body: {
 
 
 
-## GET '/v1/partner/score{?category_id}'
+## GET '/v1/partner/scores{?category_id}'
 * Purpose: Retrieve scoring/ranking data for an entire category
 * **Very expensive query**, try to minimise usage of this!
 
@@ -323,8 +323,8 @@ Body: {
         "climber_id": "climberId1",
         "climber_name": "John Smith",
         "climber_marker": "NMQ001",
-        "affiliation": "National University of Singapore",
-        "gender": "M",
+        "climber_affiliation": "National University of Singapore",
+        "climber_gender": "M",
         "rank": 1,
         "score_tabulated": {
           "string": "2T2 2B2"
@@ -348,8 +348,8 @@ Body: {
         "climber_id": "climberId2",
         "climber_name": "James Smith",
         "climber_marker": "NMQ002",
-        "affiliation": "National University of Singapore",
-        "gender": "M",
+        "climber_affiliation": "National University of Singapore",
+        "climber_gender": "M",
         "rank": 2,
         "score_tabulated": {
           "string": "2T3 2B3"
@@ -398,8 +398,8 @@ Body: {
 | `category.scores.$.climber_id`                        | String |  |
 | `category.scores.$.climber_name`                      | String |  |
 | `category.scores.$.climber_marker`                    | String |  |
-| `category.scores.$.affiliation`                       | String |  |
-| `category.scores.$.gender`                            | String | Possible values are `M`, `F` or no value |
+| `category.scores.$.climber_affiliation`               | String |  |
+| `category.scores.$.climber_gender`                    | String | Possible values are `M`, `F` or no value |
 | `category.scores.$.rank`                              | Number |  |
 | `category.scores.$.score_tabulated`                   | Object |  |
 | `category.scores.$.score_tabulated.string`            | String |  |
@@ -430,7 +430,8 @@ Header: {
 | Key | Type | Comment/Description |
 | --- | --- | --- |
 | `category_id` | String | Optional |
-| `route_id`    | String | Optional. If `route_id` is specified, then you can assume that `categories[0].routes[0]` will be the data for the route requested |
+
+<!-- | `route_id` | String | Optional. If `route_id` is specified, then you can assume that `categories[0].routes[0]` will be the data for the route requested | -->
 
 ### Response
 ```json
@@ -488,6 +489,20 @@ Body: {
 | `categories.$.routes.$.climber.climber_id`          | String |  |
 | `categories.$.routes.$.climber.climber_marker`      | String |  |
 | `categories.$.routes.$.climber.climber_name`        | String |  |
+
+* If there are no active climbers:
+  * `categories` will be an empty array
+* If there is 1 or more active climbers in a category:
+  * If `route_id` *is not* specified in the GET request
+    * Every route in the category will be included in `categories.$.routes`
+    * For routes with no climbers:
+      * `categories.$.routes.$.climber.climber_id` will be an empty string
+      * `categories.$.routes.$.climber.climber_marker` will be an empty string
+      * `categories.$.routes.$.climber.climber_name` will be 'No climber on route'
+
+<!-- * If `route_id` *is* specified in the GET request
+  * Only the specified route will be included in `categories.$.routes`
+  * For specified route with no climbers: -->
 
 
 
