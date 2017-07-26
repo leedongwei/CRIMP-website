@@ -1,0 +1,29 @@
+section.page-feature {
+  text-align: center;
+
+
+  .column {
+    &.left { text-align: center; }
+    &.right {
+      display: flex !important;
+      flex-wrap: wrap;
+      align-items: center;
+      text-align: left;
+    }
+  }
+
+  img {
+    width: auto;
+    max-height: 250px;
+  }
+
+
+  @media #{$mobile} {
+    .column.right { text-align: center; }
+
+    img {
+      width: auto;
+      max-height: 200px;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+footer {
+  display: block;
+  width: 100%;
+  padding: 3rem 0 2rem;
+  margin-top: 2rem;
+  border-top: 1px $grey_semantic dotted;
+
+  .ui.header.crimp { margin: 0; }
+  .sub.header {
+    font-family: $font_head_sub;
+    margin: 0 0 2rem;
+  }
+
+  .flag { margin: 0; }
+}

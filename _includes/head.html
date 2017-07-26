@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+<meta name="description" content="{{site.description}}">
+<meta name="keywords" content="climbing, bouldering, sport-climbing, competition, IFSC, real-time, scorekeeping">
+<meta name="author" content="CRIMP Industries">
+
+<meta name="google-site-verification" content="ghS8fQ_rysrOzjN38E9u3BaAOfuZZLsHOPC5bEMBnGQ" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<!-- Facebook Open Graph -->
+<meta property="og:url" content="{{site.url}}" />
+<meta property="og:description" content="{{site.description}}">
+<meta property="og:image" content="{{site.url}}{{site.baseurl}}/assets/CRIMP-splash.png" />
+<meta property="fb:app_id" content="1755524564692923" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="CRIMP"/>
+
+
+{% if page.title %}
+  <meta property="og:title" content="{{page.title}} - {{site.title}}" />
+  <title>{{page.title}} - {{site.title}}</title>
+{% else %}
+  <meta property="og:title" content="{{site.title}}" />
+  <title>{{site.title}}</title>
+{% endif %}
+
+
+<link rel="icon" type="image/png" href="{{site.url}}{{site.baseurl}}/assets/img/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="{{site.url}}{{site.baseurl}}/assets/img/favicon-16x16.png" sizes="16x16" />
+
+
+<!-- Libraries -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.css" integrity="sha256-wT6CFc7EKRuf7uyVfi+MQNHUzojuHN2pSw0YWFt2K5E=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Oswald|Open+Sans">
+
+<!-- Our custom styles -->
+<link rel="stylesheet" href="assets/styles.css">

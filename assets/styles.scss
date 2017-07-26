@@ -1,0 +1,136 @@
+---
+---
+
+@font-face {
+  font-family: 'League Spartan';
+  src: url('font/leaguespartan-bold.eot');
+  src: url('font/leaguespartan-bold.eot?#iefix') format('embedded-opentype'),
+       url('font/leaguespartan-bold.woff2') format('woff2'),
+       url('font/leaguespartan-bold.woff') format('woff'),
+       url('font/leaguespartan-bold.ttf') format('truetype'),
+       url('font/leaguespartan-bold.svg#league_spartanbold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+$font_head_main: 'League Spartan', sans-serif;
+$font_head_sub: 'Oswald', sans-serif;
+$font_body: 'Open Sans', sans-serif;
+$grey_semantic: rgba(34, 36, 38, 0.1);
+
+
+/**
+ *
+ *  Media Queries
+ *
+ */
+$mobile: "(max-width: 767px)";
+$tablet: "(min-width: 768px) and (max-width: 991px)";
+$computer: "(min-width: 992px) and (max-width: 1199px)";
+$monitor: "(min-width: 1200px) and (max-width: 1919px)";
+$widescreen: "(min-width: 1920px)";
+
+@media only screen and #{$mobile} {
+  .mobile.hidden,
+  .tablet.only,
+  .computer.only,
+  .large.monitor.only,
+  .widescreen.monitor.only {
+    display: none !important;
+  }
+}
+@media only screen and #{$tablet} {
+  .mobile.only,
+  .tablet.hidden,
+  .computer.only,
+  .large.monitor.only,
+  .widescreen.monitor.only {
+    display: none !important;
+  }
+}
+@media only screen and #{$computer} {
+  .mobile.only,
+  .tablet.only,
+  .computer.hidden,
+  .large.monitor.only,
+  .widescreen.monitor.only {
+    display: none !important;
+  }
+}
+@media only screen and #{$monitor} {
+  .mobile.only,
+  .tablet.only,
+  .computer.only,
+  .large.monitor.hidden,
+  .widescreen.monitor.only {
+    display: none !important;
+  }
+}
+@media only screen and #{$widescreen} {
+  .mobile.only,
+  .tablet.only,
+  .computer.only,
+  .large.monitor.only,
+  .widescreen.monitor.hidden  {
+    display: none !important;
+  }
+}
+
+
+/**
+ *
+ *  Utility
+ *
+ */
+.crimp {
+  font-family: $font_head_main !important;
+}
+
+
+/**
+ *
+ *  General Classes
+ *
+ */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  color: #4A4A4A;
+}
+
+a {
+  color: #FBBD08;
+
+  &:hover, &:focus {
+    color: #FF7849;
+  }
+}
+
+nav { z-index: 1000 }
+
+section.ui.container {
+  position: relative;
+  padding: 50px 0;
+  border-bottom: 1px solid $grey_semantic;
+
+  &:last-child {
+    border: none;
+  }
+
+  div.centered {
+    text-align: center;
+  }
+}
+
+// _includes
+@import "header.scss";
+@import "footer.scss";
+
+// _layouts
+@import "index.scss";
+
+
+// pages
+@import "features.scss";
+@import "overview.scss";
+@import "faq.scss";

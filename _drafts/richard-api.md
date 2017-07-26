@@ -1,3 +1,12 @@
+---
+layout: page
+title: "API"
+subtitle: "Data as the action happens"
+background: "pricing"
+---
+
+<section id="" class="ui container">
+
 # CRIMP REST API
 1. Login to CRIMP platform: http://app.crimp.rocks/
 1. Join the event that you're intend to work with
@@ -507,3 +516,4 @@ Body: {
 
 
 <br><br><br>
+</section>

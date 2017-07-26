@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+  {% include head.html %}
+</head>
+
+<body>
+  <div class="ui top sidebar vertical menu">
+    {% include navigation-menu.html %}
+  </div>
+
+  <div class="pusher">
+    {% include header.html %}
+
+    {{page.content}}
+  </div>
+
+
+  {% include footer.html %}
+
+  <!-- 3rd-party Services -->
+  <script async defer src="https://platform-api.sharethis.com/js/sharethis.js#property=58a4249d8d1151001277c1c9&product=inline-share-buttons"></script>
+</body>

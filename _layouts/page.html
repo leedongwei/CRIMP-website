@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+  {% include head.html %}
+</head>
+
+<body>
+  <div class="ui top sidebar vertical menu">
+    {% include navigation-menu.html %}
+  </div>
+
+  <div class="pusher">
+    {% include header.html %}
+
+    {{page.content | markdownify}}
+  </div>
+
+
+  {% include footer.html %}
+</body>

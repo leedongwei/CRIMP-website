@@ -1,536 +1,98 @@
-<!DOCTYPE html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="description" content="A real-time scoring app for climbing events. Ditch that Excel sheet. Deliver real-time scores to your climbers while simplifying scorekeeping for your crew.">
-  <meta name="keywords" content="climbing, bouldering, sport-climbing, competition, IFSC, real-time scoring, boulderactive">
-  <meta name="author" content="Climbers that CRIMP">
+---
+# You don't need to edit this file, it's empty on purpose.
+# Edit theme's home layout instead if you wanna make some changes
+# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+layout: home
+background: index
+---
 
-  <meta name="google-site-verification" content="ghS8fQ_rysrOzjN38E9u3BaAOfuZZLsHOPC5bEMBnGQ" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<section id="index-statistics" class="ui container">
+  <div class="ui centered statistics grid">
+    <div class="sixteen wide mobile five wide tablet five wide computer five wide widescreen column">
+      <div class="statistic">
+        <div class="value">
+          <i class="world yellow icon"></i>
+        </div>
+        <div class="label">
+          <h3 class="crimp">Your mission control</h3>
+          <h4>Everything in one place</h4>
+          <p>Using several Excel sheets to track your climbers, judges and scores? With CRIMP, you’ll have 1 simple platform so that you can focus on the climbing action.</p>
+        </div>
+      </div>
+    </div>
 
+    <div class="five wide tablet five wide computer five wide widescreen sixteen wide mobile column">
+      <div class="statistic">
+        <div class="value">
+          <i class="mobile yellow icon"></i>
+        </div>
+        <div class="label">
+          <h3 class="crimp">Simple Scorekeeping</h3>
+          <h4>Native Android app for judges</h4>
+          <p>Designed to be simple. Engineered to be reliable. It works with bad connectivity, ensuring that critical scores will always reach the hands of the chief judge.</p>
+        </div>
+      </div>
+    </div>
 
-  <!-- Facebook Open Graph -->
-  <meta property="og:url" content="http://crimp.rocks" />
-  <meta property="og:title" content="CRIMP: Comprehensive Real-time Index of MgCO&#8323; Performance" />
-  <meta property="og:description" content="A real-time scoring app for climbing events. Ditch that Excel sheet. Deliver real-time scores to your climbers while simplifying scorekeeping for your crew.">
-  <meta property="og:image" content="http://crimp.rocks/assets/CRIMP-splash.png" />
-  <meta property="fb:app_id" content="1755524564692923" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="CRIMP"/>
-
-
-
-  <title>CRIMP - a real-time scoring app for climbing events</title>
-  <link rel="icon" type="image/png" href="assets/favicon-32x32.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="assets/favicon-16x16.png" sizes="16x16" />
-
-
-  <!-- Libraries -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.css" integrity="sha256-wT6CFc7EKRuf7uyVfi+MQNHUzojuHN2pSw0YWFt2K5E=" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Alegreya+Sans|Oswald|Open+Sans">
-
-  <!-- Our custom styles -->
-  <link rel="stylesheet" href="css/index.css">
-</head>
-
-<body>
-  <div class="ui top sidebar vertical menu">
-    <a class="item" href="#features">
-      Features
-    </a>
-    <a class="item" href="#howitworks">
-      How it works
-    </a>
-    <a class="item" href="#pricing">
-      Pricing
-    </a>
-    <!-- <a class="item" href="">
-      About Us
-    </a> -->
-    <div class="item">
-      <a class="ui yellow fluid button" href="http://app.crimp.rocks">
-        <i class="ui sign in icon"></i>
-        Login/Sign Up
-      </a>
+    <div class="five wide tablet five wide computer five wide widescreen sixteen wide mobile column">
+      <div class="statistic">
+        <div class="value">
+          <i class="ordered list yellow small icon"></i>
+        </div>
+        <div class="label">
+          <h3 class="crimp">Live Scores</h3>
+          <h4>Less waiting, more excitement</h4>
+          <p>Make your event flow smoothly with instant results. Get a powerful website that shares event schedule, rank and scores of the climbers as it happens</p>
+        </div>
+      </div>
     </div>
   </div>
+</section>
 
 
-  <div class="pusher">
-    <header>
-      <nav class="ui menu">
-        <div class="item">
-          <a class="crimp" href="/#">CRIMP</span>
-        </div>
+<section id="index-market" class="ui container">
+  <h1 class="ui centered header crimp">We want to simplify scorekeeping for organizers, and supercharge the event experience for climbers and spectators</h1>
 
-        <div class="mobile <!--tablet--> hidden right menu">
-          <a class="item" href="#features">
-            Features
-          </a>
-          <a class="item" href="#howitworks">
-            How it works
-          </a>
-          <a class="item" href="#pricing">
-            Pricing
-          </a>
-          <!-- <a class="item" href="">
-            About Us
-          </a> -->
-          <div class="item">
-            <a class="ui labeled icon yellow button" href="http://app.crimp.rocks">
-              <i class="ui sign in icon"></i> Login/Sign Up
-            </a>
-          </div>
-        </div>
+  <br>
+  <br>
 
-        <div class="tablet computer large widescreen monitor hidden right menu">
-          <a id="open-ui-sidebar" class="item">
-            <i class="ui content icon"></i>
-          </a>
-        </div>
-      </nav>
-
-
-      <div class="ui container header-text">
-        <h1>It's time to ditch Excel</h1>
-
-        <h2>
-          <span class="sentence">We reinvent scoring to supercharge the spectating experience at your climbing event</span>
-          <span class="sentence">Deliver real-time scores to your climbers while simplifying scorekeeping for your crew</span>
-        </h2>
-      </div>
-    </header>
-
-
-
-    <div id="features" class="anchor"></div>
-    <section id="features-section" class="ui container">
-      <h1 class="ui centered header crimp">Scorekeeping for the 21st century climbing event</h1>
-
-      <div class="ui centered statistics grid">
-        <div class="four wide computer five wide tablet fourteen wide mobile column">
-          <div class="statistic">
-            <div class="value">
-              <i class="trophy yellow icon"></i>
-            </div>
-            <div class="label">
-              <div class="ui styled accordion">
-                <div class="title">
-                  <i class="chevron circle down icon"></i>
-                  View your scores online
-                </div>
-                <div class="content">
-                  <p class="description">Everyone can see the scores from their phones. Now all our friends can know that a 12 year old kid flashed a climb that we can't even start on.</p>
-
-                  <p class="disclaimer">&#x3E; See the scoreboard at <a href="http://demo.crimp.rocks">demo.crimp.rocks</a></p>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="four wide computer five wide tablet fourteen wide mobile column">
-          <div class="statistic">
-            <div class="value">
-              <i class="lightning yellow icon"></i>
-            </div>
-            <div class="label">
-              <div class="ui styled accordion">
-                <div class="title">
-                  <i class="chevron circle down icon"></i>
-                  Real-time score updates
-                </div>
-                <div class="content">
-                  <p class="description">Let your climbers track their progress as the event happens! Scores are pushed to the online scoreboard instantly - no refresh needed. Waiting 3 hours for manual score tabulation is a thing of the past.</p>
-
-                  <p class="disclaimer">&#x3E; Live scores can be turned off</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="four wide computer five wide tablet fourteen wide mobile column">
-          <div class="statistic">
-            <div class="value">
-              <i class="child yellow icon"></i>
-            </div>
-            <div class="label">
-              <div class="ui styled accordion">
-                <div class="title">
-                  <i class="chevron circle down icon"></i>
-                  See who's climbing on the wall
-                </div>
-                <div class="content">
-                  <p class="description">The app tracks the route judges and climbers active on the wall. And we share that on the scoreboard so we can learn to spell the names of our favourite Russian climbers while watching them climb.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- <div class="four wide computer five wide tablet fourteen wide mobile column">
-          <div class="statistic">
-            <div class="value">
-              <i class="android yellow icon"></i>
-            </div>
-            <div class="label">
-              <div class="ui styled accordion">
-                <div class="title">
-                  <i class="chevron circle down icon"></i>
-
-                </div>
-                <div class="content">
-                  <p class="description"></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-        <div class="four wide computer five wide tablet fourteen wide mobile column">
-          <div class="statistic">
-            <div class="value">
-              <i class="android yellow icon"></i>
-            </div>
-            <div class="label">
-              <div class="ui styled accordion">
-                <div class="title">
-                  <i class="chevron circle down icon"></i>
-                  Easy-to-use app for route judges
-                </div>
-                <div class="content">
-                  <p class="description">Scores are submitted and tabulated at the push of a button. Bad reception? The app elegantly handles that without human intervention. We let the judges focus on catching foot dabs and no-match-finishes.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="four wide computer five wide tablet fourteen wide mobile column">
-          <div class="statistic">
-            <div class="value">
-              <i class="calculator yellow icon"></i>
-            </div>
-            <div class="label">
-              <div class="ui styled accordion">
-                <div class="title">
-                  <i class="chevron circle down icon"></i>
-                  Multiple scoring systems are supported
-                </div>
-                <div class="content">
-                  <p class="description">If you plan to use a score system that we do not have, contact us 1 month in advance and we'll work with you to add it in!</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="four wide computer five wide tablet fourteen wide mobile column">
-          <div class="statistic">
-            <div class="value">
-              <i class="newspaper yellow icon"></i>
-            </div>
-            <div class="label">
-              <div class="ui styled accordion">
-                <div class="title">
-                  <i class="chevron circle down icon"></i>
-                  Individualized score-chits for your climbers
-                </div>
-                <div class="content">
-                  <p class="description">We'll generate them in a PDF that is ready-for-printing. Designed for use with our scoring app to speed up scoring. Collect them after the climbs and they'll double as a hard-copy backup!</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="four wide computer five wide tablet fourteen wide mobile column">
-          <div class="statistic">
-            <div class="value">
-              <i class="record yellow icon"></i>
-            </div>
-            <div class="label">
-              <div class="ui styled accordion">
-                <div class="title">
-                  <i class="chevron circle down icon"></i>
-                  Live data for live broadcasts
-                </div>
-                <div class="content">
-                  <p class="description">Our servers know everything about the climbers on your wall. Text-overlay on video streams can be so much richer with our support.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!--
-        <div class="four wide computer five wide tablet fourteen wide mobile column">
-          <div class="statistic">
-            <div class="value">
-              <i class="record yellow icon"></i>
-            </div>
-            <div class="label">
-              <p class="title"></p>
-
-              <p class="description"></p>
-            </div>
-          </div>
-        </div>
-        -->
-      </div>
-
-
-    </section>
-
-
-
-    <section class="ui container conversion-section">
-      <h1 class="ui centered header crimp">Please tell someone about us!</h1>
-
-      <p>We are new and we could really use your help to reach out to people who'll find us useful.</p>
-      <p>If you know folks that organize climbing events at any level, please let them know we exist!</p>
-
-      <div class="sharethis-inline-share-buttons"></div>
-    </section>
-
-
-
-    <div id="howitworks" class="anchor"></div>
-    <section id="howitworks-section" class="ui container">
-      <h1 class="ui centered header crimp">How CRIMP will work</h1>
-      <ul class="timeline">
-
-        <li>
-          <div class="direction-r">
-            <div class="timepoint-wrapper">
-              <span class="timepoint">When Event is confirmed</span>
-              <span class="time-wrapper">
-                <span class="time">4 weeks before</span>
-              </span>
-            </div>
-            <div class="desc">
-              <ul>
-                <li>You create Event on CRIMP organizer platform</li>
-                <li>You inform video-stream vendor to use CRIMP</li>
-              </ul>
-            </div>
-          </div>
-        </li>
-
-        <li>
-          <div class="direction-l">
-            <div class="timepoint-wrapper">
-              <span class="timepoint">When Routes are confirmed</span>
-              <span class="time-wrapper">
-                <span class="time">1 week before</span>
-              </span>
-            </div>
-            <div class="desc">
-              <ul>
-                <li>You create Categories in Event on platform</li>
-              </ul>
-            </div>
-          </div>
-        </li>
-
-        <li>
-          <div class="direction-r">
-            <div class="timepoint-wrapper">
-              <span class="timepoint">When Climbers are confirmed</span>
-              <span class="time-wrapper">
-                <span class="time">1 day before</span>
-              </span>
-            </div>
-            <div class="desc">
-              <ul>
-                <li>You enter Climbers into Categories on platform</li>
-                <li>You print generated score-chits from platform</li>
-              </ul>
-            </div>
-          </div>
-        </li>
-
-        <li>
-          <div class="direction-l">
-            <div class="timepoint-wrapper">
-              <span class="timepoint">When Judges are confirmed</span>
-              <span class="time-wrapper">
-                <span class="time">1 day before</span>
-              </span>
-            </div>
-            <div class="desc">
-              <ul>
-                <li>You share download link for app with Judges</li>
-                <li>Chief Judge approves judges through the platform</li>
-              </ul>
-            </div>
-          </div>
-        </li>
-
-        <li>
-          <div class="direction-r">
-            <div class="timepoint-wrapper">
-              <span class="timepoint">Before each Category</span>
-              <span class="time-wrapper">
-                <span class="time">Event Day</span>
-              </span>
-            </div>
-            <div class="desc">
-              <ul>
-                <li>You give out score-chits to climbers at isolation</li>
-                <li>Chief Judge checks every Judge is at the correct route through our dashboard</li>
-              </ul>
-            </div>
-          </div>
-        </li>
-
-        <li>
-          <div class="direction-l">
-            <div class="timepoint-wrapper">
-              <span class="timepoint">During each Category</span>
-              <span class="time-wrapper">
-                <span class="time">Event Day</span>
-              </span>
-            </div>
-            <div class="desc">
-              <ul>
-                <li>Judges submit scores through CRIMP app</li>
-                <li>Chief Judge monitors event through our dashboard</li>
-              </ul>
-            </div>
-          </div>
-        </li>
-
-        <li>
-          <div class="direction-r">
-            <div class="timepoint-wrapper">
-              <span class="timepoint">After each Category</span>
-              <span class="time-wrapper">
-                <span class="time">Event Day</span>
-              </span>
-            </div>
-            <div class="desc">
-              <ul>
-                <li>Chief Judge debrief Judges</li>
-                <li>Chief Judge mark scores as confirmed on platform</li>
-              </ul>
-            </div>
-          </div>
-        </li>
-
-        <!-- <li>
-          <div class="direction-l">
-            <div class="timepoint-wrapper">
-              <span class="timepoint"> </span>
-              <span class="time-wrapper">
-                <span class="time"></span>
-              </span>
-            </div>
-            <div class="desc">
-              <ul>
-                <li> </li>
-              </ul>
-            </div>
-          </div>
-        </li> -->
-
-      </ul>
-    </section>
-
-
-
-    <section class="ui container conversion-section">
-      <h1 class="ui centered header crimp">Try it out for free!</h1>
-
-      <p>We have setup an demo event! Go play with it!</p>
-      <div class="ui centered grid">
-        <div class="three wide monitor five wide computer five wide tablet fourteen wide mobile column">
-          <a class="ui yellow huge fluid button" href="http://app.crimp.rocks">
-            Take me to the app!
-          </a>
-        </div>
-      </div>
-    </section>
-
-
-
-    <div id="pricing" class="anchor"></div>
-    <section class="ui container">
-      <h1 class="ui centered header crimp">Pricing Guide</h1>
-
-    </section>
-
-
-
-    <footer>
-      <section class="ui three column stackable grid container">
-        <div class="column">
-          <p class="ui large header crimp">CRIMP</p>
-          <p>
-            Comprehensive Real-time Index of MgCO₃ Performance
-          </p>
-          <p>
-            First ascent in 2014<br>
-            Cleaned and bolted in &nbsp;<abbr title="Singapore"><i class="ui sg flag"></i></abbr><br>
-            Graded as YDS 5.9 / French 5c<br>
-            Definitely not sandbagged
-          </p>
-        </div>
-
-        <div class="column">
-          <p class="ui large header crimp">Help Needed!</p>
-          <p>
-            We're looking for
-
-            <ul>
-              <li>UIUX designer</li>
-              <li>iOS developer</li>
-              <li>meteor.js developer</li>
-            </ul>
-
-            If you're interested to learn more about our project, please drop us an email and we can chat!
-          </p>
-        </div>
-
-        <div class="column">
-          <p class="ui large header crimp">Contact</p>
-
-          <div class="ui list">
-            <div class="item">
-              <i class="mail icon"></i>
-              <div class="content">
-                <a href="mailto:hello@crimp.rocks">hello@crimp.rocks</a>
-              </div>
-            </div>
-            <!-- <div class="item">
-              <i class="facebook icon"></i>
-              <div class="content">
-                <a href="https://www.facebook.com/CRIMP.rocks/" target="_blank">facebook</a>
-              </div>
-            </div>
-            <div class="item">
-              <i class="instagram icon"></i>
-              <div class="content">
-                 <a href="https://www.instagram.com/CRIMP.rocks/" target="_blank">instagram</a>
-              </div>
-            </div> -->
-          </div>
-        </div>
-      </section>
-    </footer>
+  <div class="centered">
+    <a class="ui large yellow labeled icon button" href="/features.html">
+      <i class="pointing right icon"></i>
+      See our features!
+    </a>
   </div>
+</section>
 
 
-  <!-- Libraries -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.js" integrity="sha256-flVaeawsBV96vCHiLmXn03IRJym7+ZfcLVvUWONCas8=" crossorigin="anonymous"></script>
+<section id="index-events" class="ui container">
+  <h1 class="ui centered header crimp">CRIMP has powered these events</h1>
 
-  <!-- Our stuff -->
-  <script async src="js/index.js"></script>
+  <div class="ui centered stackable grid">
+    <div class="three wide column">
+      <img src="assets/img/events/ba.jpg">
+    </div>
+    <div class="three wide column">
+      <img src="assets/img/events/nsbc.jpg">
+    </div>
+    <div class="three wide column">
+      <img src="assets/img/events/pumpfest.jpg">
+    </div>
+    <div class="three wide column">
+      <img src="assets/img/events/boulderactive.jpg">
+    </div>
+    <div class="three wide column">
+      <img src="assets/img/events/transend.jpg">
+    </div>
+  </div>
+</section>
 
-  <!-- 3rd-party Services -->
-  <script async defer src="https://platform-api.sharethis.com/js/sharethis.js#property=58a4249d8d1151001277c1c9&product=inline-share-buttons"></script>
-</body>
+
+<section id="index-conversion" class="ui container">
+  <h1 class="ui centered header crimp">Please tell someone about us!</h1>
+
+  <p>We are new and we could really use your help to reach out to people who'll find us useful.</p>
+  <p>If you know folks that organize climbing events at any level, please tell them about CRIMP!</p>
+
+  <div class="sharethis-inline-share-buttons"></div>
+</section>

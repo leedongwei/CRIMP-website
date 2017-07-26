@@ -1,0 +1,142 @@
+/**
+ *
+ *  Header
+ *
+ */
+header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: url('../assets/img/bg-index.jpg') no-repeat left center /*fixed */;
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+
+  margin-top: 40px;
+  text-align: center;
+
+  &.header-main { height: 450px; }
+  &.header-page { height: 200px; }
+
+  &.features {
+    background: url('../assets/img/bg-features.jpg') no-repeat center center /*fixed */;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+  }
+  &.overview {
+    background: url('../assets/img/bg-overview.jpg') no-repeat top center /*fixed */;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+  }
+  &.pricing {
+    background: url('../assets/img/bg-pricing.jpg') no-repeat center center /*fixed */;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+  }
+  &.faq {
+    background: url('../assets/img/bg-index.jpg') no-repeat center center /*fixed */;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+  }
+
+
+  // @media #{$computer} {
+  //   background: url('../assets/bg-main-page.jpg') no-repeat center center /*fixed*/;
+  //   background-size: cover;
+  //   -o-background-size: cover;
+  //   -moz-background-size: cover;
+  //   -webkit-background-size: cover;
+  // }
+
+  // @media #{$monitor} {
+  //   background: url('../assets/bg-main-page.jpg') no-repeat center center /*fixed*/;
+  //   background-size: cover;
+  //   -o-background-size: cover;
+  //   -moz-background-size: cover;
+  //   -webkit-background-size: cover;
+  // }
+
+  // @media #{$widescreen} {
+  //   background: url('../assets/bg-main-page.jpg') no-repeat center center /*fixed*/;
+  //   background-size: cover;
+  //   -o-background-size: cover;
+  //   -moz-background-size: cover;
+  //   -webkit-background-size: cover;
+  // }
+
+
+
+  // Overwrite Semantic UI
+  .ui.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    border-radius: 0;
+    border: none;
+    text-align: center;
+
+    .item:before {
+      background: none;
+    }
+  }
+
+  nav .crimp {
+    position: absolute;
+    font-size: 2em;
+    bottom: 0px;
+    color: #000;
+  }
+
+  @media #{$mobile} {
+    nav .crimp {
+      bottom: -3px;
+    }
+  }
+
+
+  .header-text {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    text-shadow: 0px 0px 8px #ccc;
+    // text-shadow: 0px 0px 6px #1A2634;
+
+    .main {
+      font-size: 2em;
+      margin-bottom: .4em;
+    }
+
+    @media #{$mobile} {
+      .main {
+        font-size: 1.6em;
+      }
+    }
+
+    .sub {
+      font-size: 1.5em;
+      font-family: $font_head_sub;
+    }
+
+    @media #{$mobile} {
+      .sub {
+        font-size: 1.3em;
+      }
+    }
+  }
+}

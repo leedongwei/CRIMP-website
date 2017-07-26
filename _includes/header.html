@@ -1,0 +1,51 @@
+<header class="{% if page.title %}head-page{% else %}header-main{% endif %} {{page.background}}">
+  <nav class="ui menu">
+    <div class="item">
+      <a class="crimp" href="{{site.url}}">CRIMP</span>
+    </div>
+
+    <div class="mobile hidden right menu">
+      {% include navigation-menu.html %}
+    </div>
+
+    <div class="tablet computer large widescreen monitor hidden right menu">
+      <a id="ui-sidebar-open" class="item">
+        <i class="ui content icon"></i>
+      </a>
+    </div>
+  </nav>
+
+
+  <div class="ui container">
+    <div class="ui grid">
+      {% if page.title %}
+        <div class="sixteen wide column">
+          <div class="header-text">
+            <div class="main crimp">{{page.title}}</div>
+
+            {% if page.subtitle %}
+              <div class="sub">{{page.subtitle}}</div>
+            {% endif %}
+          </div>
+        </div>
+      {% else %}
+        <div class="right floated sixteen wide mobile ten wide computer column">
+          <div class="header-text">
+            <div class="main crimp">Do more with a smaller crew</div>
+            <div class="sub">CRIMP gives judges and scorekeepers superpowers</div>
+
+            <br><br>
+
+            <a class="ui yellow large button mobile hidden" href="http://app.crimp.rocks?ref=landing_header">
+              Signup for Event Organizers
+            </a>
+
+            <a class="ui large button" href="https://play.google.com/store/apps/details?id=rocks.crimp&hl=en">
+              Download App for Judges
+            </a>
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</header>
