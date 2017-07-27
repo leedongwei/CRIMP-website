@@ -94,8 +94,11 @@ $widescreen: "(min-width: 1920px)";
  */
 html, body {
   width: 100%;
-  overflow-x: hidden;
   color: $grey_text;
+
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 a {
