@@ -1,8 +1,116 @@
 $(document).ready(function () {
-  // $('.ui.accordion').accordion();
-
   $('#ui-sidebar-open').on('click', function () {
     $('.ui.sidebar').sidebar('toggle');
+  });
+
+
+  $('.index-event-logo').popup({ inline: true });
+
+
+  /**
+   *  Contact form
+   */
+  $('#contact .ui.form').form({
+    fields: {
+      contact_name: {
+        identifier: 'contact_name',
+        rules: [{
+          type   : 'empty',
+          prompt : 'Name: Please tell us your name',
+        }],
+      },
+      contact_email: {
+        identifier: 'contact_email',
+        rules: [{
+          type   : 'empty',
+          prompt : 'Email: Please give us a way to contact you',
+        }, {
+          type   : 'email',
+          prompt : 'Email: Please enter a valid email address',
+        }],
+      },
+      contact_website: {
+        identifier: 'contact_website',
+        optional: true,
+        rules: [{
+          type   : 'url',
+          prompt : 'Website: Please enter a valid website URL',
+        }],
+      },
+      contact_size: {
+        identifier: 'contact_size',
+        rules: [{
+          type   : 'empty',
+          prompt : 'Event Size: Please give us an estimate of your event size',
+        }],
+      },
+      contact_country: {
+        identifier: 'contact_country',
+        rules: [{
+          type   : 'empty',
+          prompt : 'Country: Please let us know where your event will be held',
+        }],
+      },
+      contact_message: {
+        identifier: 'contact_message',
+        rules: [{
+          type   : 'empty',
+          prompt : 'Message: Write us a message! We\' love to hear from you!',
+        }],
+      },
+    },
+  });
+
+  $('#contact-submit').on('click', function() {
+    var $button = $(this);
+    var $form = $button.closest('.ui.form');
+
+    var isValid = $form.form('validate form');
+    if (!isValid) return;
+
+    $button.hide();
+    $form.removeClass('success error loading');
+    $form.addClass('loading');
+
+    var formData = $form.form('get values');
+    console.log(formData);
+
+
+    function handleError(jqXHR, textStatus, errorThrown) {
+      $form.removeClass('success error loading');
+
+      $button.show();
+      $form.find('.ui.warning.message').show();
+
+      console.log(jqXHR);
+      console.log(textStatus);
+      console.log(errorThrown);
+    }
+
+    function handleSuccess(data, textStatus) {
+      $form.removeClass('success error loading');
+      $form.removeClass('loading');
+
+      if (textStatus === 'success') {
+        $form.addClass('success');
+      } else {
+        $button.show();
+        $form.find('.ui.warning.message').show();
+      }
+
+      console.log(data);
+      console.log(textStatus);
+    }
+
+
+    $.ajax({
+      url: '//formspree.io/dw@crimp.rocks',
+      method: 'POST',
+      data: formData,
+      dataType: 'json',
+      success: handleSuccess,
+      error: handleError,
+    });
   });
 });
 

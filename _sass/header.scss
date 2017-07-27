@@ -3,6 +3,8 @@
  *  Header
  *
  */
+nav { z-index: 1000 }
+
 header {
   position: relative;
   display: flex;
@@ -46,6 +48,13 @@ header {
   }
   &.faq {
     background: url('../assets/img/bg-index.jpg') no-repeat center center /*fixed */;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+  }
+  &.contact {
+    background: url('../assets/img/bg-contact.jpg') no-repeat center right /*fixed */;
     background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;

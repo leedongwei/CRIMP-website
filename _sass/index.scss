@@ -1,4 +1,4 @@
-#index-statistics {
+section#index-statistics {
   .value {
     margin-bottom: .25em;
   }
@@ -6,6 +6,7 @@
   .label {
     font-weight: 400;
     text-transform: none;
+    color: $grey_text;
   }
 
   h3 {
@@ -38,5 +39,31 @@ section#index-events {
     max-width: 175px;
     max-height: 175px;
     margin: auto auto;
+  }
+}
+
+
+section#index-cta {
+  h2 { margin-bottom: 5px; }
+  h5 { margin-top: 5px; }
+
+  .column {
+    &.left { text-align: right; }
+    &.right { text-align: left; }
+  }
+
+  .column.left {
+    display: flex;
+    align-items: center;
+
+    > div { width: 100%; }
+  }
+
+
+  @media #{$mobile} {
+    .column {
+      &.left { text-align: center; }
+      &.right { text-align: center; }
+    }
   }
 }

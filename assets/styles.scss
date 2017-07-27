@@ -17,7 +17,7 @@ $font_head_main: 'League Spartan', sans-serif;
 $font_head_sub: 'Oswald', sans-serif;
 $font_body: 'Open Sans', sans-serif;
 $grey_semantic: rgba(34, 36, 38, 0.1);
-
+$grey_text: #3C4858;
 
 /**
  *
@@ -95,7 +95,7 @@ $widescreen: "(min-width: 1920px)";
 html, body {
   width: 100%;
   overflow-x: hidden;
-  color: #4A4A4A;
+  color: $grey_text;
 }
 
 a {
@@ -106,7 +106,9 @@ a {
   }
 }
 
-nav { z-index: 1000 }
+.ui.header {
+  color: $grey_text !important;
+}
 
 section.ui.container {
   position: relative;
@@ -120,17 +122,32 @@ section.ui.container {
   div.centered {
     text-align: center;
   }
+
+  div.cta-button {
+    display: inline-block;
+    margin-bottom: 10px;
+    text-align: center;
+
+    .ui.button {
+      margin: 3px 5px;
+    }
+  }
 }
+
+
 
 // _includes
 @import "header.scss";
 @import "footer.scss";
+@import "navigation-menu.scss";
+
 
 // _layouts
-@import "index.scss";
 
 
 // pages
+@import "index.scss";
 @import "features.scss";
 @import "overview.scss";
 @import "faq.scss";
+@import "contact.scss";

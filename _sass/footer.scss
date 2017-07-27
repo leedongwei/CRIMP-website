@@ -3,7 +3,7 @@ footer {
   width: 100%;
   padding: 3rem 0 2rem;
   margin-top: 2rem;
-  border-top: 1px $grey_semantic dotted;
+  // border-top: 1px $grey_semantic dotted;
 
   .ui.header.crimp { margin: 0; }
   .sub.header {
@@ -12,4 +12,11 @@ footer {
   }
 
   .flag { margin: 0; }
+}
+
+
+.footer-email {
+  max-width: 400px;
+  text-align: center;
+  margin: 0 auto 30px;
 }
