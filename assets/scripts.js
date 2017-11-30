@@ -104,7 +104,7 @@ $(document).ready(function () {
 
 
     $.ajax({
-      url: '//formspree.io/dw@crimp.rocks',
+      url: '//formspree.io/hello@crimp.rocks',
       method: 'POST',
       data: formData,
       dataType: 'json',
