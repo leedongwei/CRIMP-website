@@ -6,7 +6,6 @@ background: "pricing"
 ---
 
 
-
 # CRIMP REST API
 
 1. Login to CRIMP platform: http://app.crimp.rocks/
